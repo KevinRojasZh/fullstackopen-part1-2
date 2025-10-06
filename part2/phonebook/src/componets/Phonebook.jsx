@@ -1,12 +1,13 @@
 import Person from "./Person"
 
-function Phonebook({phoneBook}) {
+function Phonebook({phoneBook, setPhoneBook}) {
+    
     return(
     <>
+
         <div className="containerPhoneBook">
             {phoneBook.map((person)=>{
-                return <Person name={person.name} phone= {person.phone} key={person.id}/>})}
-
+                return <Person name={person.name} phone={person.number} key={person.id} id={person.id} setPhoneBook={setPhoneBook}/>})}
         </div>
 
         
