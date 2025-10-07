@@ -61,7 +61,7 @@ const update = async (id, phone, name, setPhoneBook) => {
     }
 }
 
-const create = (name,phone,phoneBook) =>{
+const create = (name,phone) =>{
 
     const newContact = {
         name:name, 
